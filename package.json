@@ -1,0 +1,25 @@
+{
+  "name": "chek-img-carousel",
+  "version": "1.0.0",
+  "description": "Display images in a carousel for a hero display.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jmchek/image-carousel.git"
+  },
+  "author": "Joe Chek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jmchek/image-carousel/issues"
+  },
+  "homepage": "https://github.com/Jmchek/image-carousel#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
