@@ -5,6 +5,10 @@ body {
     background-color: rgb(57, 71, 71);
 }
 
+.overlay {
+    position: relative;
+}
+
 .photo > img {
     width: 750px;
 }
@@ -13,9 +17,13 @@ body {
     width: 750px;
     position:relative; 
     overflow:hidden;
+    height: 40vh;
 }
 
 .wide-div {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 40vh;
     background-color: blueviolet;
 
