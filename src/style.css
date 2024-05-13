@@ -1,8 +1,24 @@
 body {
     margin: 0;
+    display: grid;
+    justify-items: center;
+    background-color: rgb(57, 71, 71);
+}
+
+.photo > img {
+    width: 750px;
+}
+
+.picture-frame {
+    width: 750px;
+    position:relative; 
+    overflow:hidden;
 }
 
 .wide-div {
     height: 40vh;
     background-color: blueviolet;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
