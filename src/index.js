@@ -5,18 +5,18 @@ const nextBttn = document.querySelector('.next');
 const wideDivGrbbr = document.querySelector('.wide-div');
 let currentPosition = parseInt(nextBttn.style.right);
 
-// console.log(nextBttn.getBoundingClientRect());
 
-nextBttn.addEventListener('click', x => {
-    // let leftPos = 0;
+function imageCarousel() {
+  let leftPos = -750;
 
-    // if (leftPos == 0){
-    // wideDivGrbbr.style.left = leftPos - 750 + "px";
-    // leftPos -= 750;
-    // } else {
-    //     wideDivGrbbr.style.left += leftPos - 750 + "px";
-    // }
-    // wideDivGrbbr.style.left = leftPos - 750 + "px";
-    // leftPos -= 750;
-    wideDivGrbbr.style.setProperty('left', '-750px');
-});
+  nextBttn.addEventListener("click", (x) => {
+    if (leftPos < -3000) {
+      leftPos = 0;
+    }
+
+    wideDivGrbbr.style.setProperty("left", leftPos + "px");
+    leftPos -= 750;
+  });
+}
+
+imageCarousel();
