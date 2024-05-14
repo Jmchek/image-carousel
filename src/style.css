@@ -24,6 +24,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     height: 40vh;
     background-color: blueviolet;
     transition-duration: 1s;

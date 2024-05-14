@@ -1,21 +1,30 @@
 import './style.css';
 
-const frameGrbbr = document.querySelector('.picture-frame');
 const nextBttn = document.querySelector('.next');
 const wideDivGrbbr = document.querySelector('.wide-div');
-let currentPosition = parseInt(nextBttn.style.right);
+const prevBttn = document.querySelector('.prev');
 
+console.log(wideDivGrbbr.getBoundingClientRect());
 
 function imageCarousel() {
-  let leftPos = -750;
+  let leftPos = 0;
 
   nextBttn.addEventListener("click", (x) => {
-    if (leftPos < -3000) {
-      leftPos = 0;
+    if (leftPos < -2500) {
+      leftPos = 750;
     }
 
-    wideDivGrbbr.style.setProperty("left", leftPos + "px");
+    wideDivGrbbr.style.setProperty("left", (leftPos - 750) + "px");
     leftPos -= 750;
+  });
+
+  prevBttn.addEventListener("click", (x) => {
+    if (leftPos == 0) {
+      leftPos = -3750;
+    }
+
+    wideDivGrbbr.style.setProperty("left", (leftPos + 750) + "px");
+    leftPos += 750;
   });
 }
 
