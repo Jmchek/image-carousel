@@ -5,20 +5,36 @@ body {
     background-color: rgb(57, 71, 71);
 }
 
-.active {
+.nav-dots > .active {
     background: url(images/full-stop.png) no-repeat;
     background-position: center;
-    background-size:auto;
+    background-size: 70px;
     cursor: pointer;
-    height: 30px;
-    width: 30px;
-    border: 1px white;
+    height: 15px;
+    width: 15px;
+    border: 3px white;
     border-radius: 50%;
     background-color: rgb(182, 170, 228);
 }
 
-.active:hover {
-    background-color: rgb(170, 179, 179);
+.nav-dots > .active:hover {
+    background-color: rgb(57, 71, 71);
+}
+
+.nav-dot {
+    background: url(images/period.png) no-repeat;
+    background-position: center;
+    background-size: 70px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border: 3px white;
+    border-radius: 50%;
+    background-color: rgb(182, 170, 228);
+}
+
+.nav-dot:hover {
+    background-color: rgb(57, 71, 71);
 }
 
 .next {
