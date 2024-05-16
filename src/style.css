@@ -5,6 +5,36 @@ body {
     background-color: rgb(57, 71, 71);
 }
 
+.active {
+    background: url(images/full-stop.png) no-repeat;
+    background-position: center;
+    background-size:auto;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    border: 1px white;
+    border-radius: 50%;
+    background-color: rgb(182, 170, 228);
+}
+
+.active:hover {
+    background-color: rgb(170, 179, 179);
+}
+
+.next {
+    background: url(images/right-arrow.png) no-repeat;
+    background-position: center;
+    background-size:contain;
+    height: 150px;
+    width: 30px;
+    cursor: pointer;
+    background-color: rgb(182, 170, 228);
+}
+
+.next:hover {
+    background-color: rgb(170, 179, 179);
+}
+
 .overlay {
     position: relative;
     display: grid;
@@ -27,6 +57,20 @@ body {
     position:relative; 
     overflow:hidden;
     height: 40vh;
+}
+
+.prev {
+    background: url(images/left-arrow.png) no-repeat;
+    background-position: center;
+    background-size:contain;
+    height: 150px;
+    width: 30px;
+    cursor: pointer;
+    background-color: rgb(182, 170, 228);
+}
+
+.prev:hover {
+    background-color: rgb(170, 179, 179);
 }
 
 .wide-div {
